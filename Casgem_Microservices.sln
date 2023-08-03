@@ -23,17 +23,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ToDo", "ToDo", "{981C3ED7-E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cargo", "Cargo", "{6396406B-F7B5-4E3B-B43E-DBCE20CBEF9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasgemMicroservices.Basket", "Services\Basket\CasgemMicroservices.Basket\CasgemMicroservices.Basket.csproj", "{01941235-BFE5-4A6B-93D8-044D91282EB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CasgemMicroservices.Basket", "Services\Basket\CasgemMicroservices.Basket\CasgemMicroservices.Basket.csproj", "{01941235-BFE5-4A6B-93D8-044D91282EB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasgemMicroservices.Catalog", "Services\Catalog\CasgemMicroservices.Catalog\CasgemMicroservices.Catalog.csproj", "{D00637F9-A6C2-4F68-BD36-781E7B905785}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CasgemMicroservices.Catalog", "Services\Catalog\CasgemMicroservices.Catalog\CasgemMicroservices.Catalog.csproj", "{D00637F9-A6C2-4F68-BD36-781E7B905785}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasgemMicroservices.Discount", "Services\Discount\CasgemMicroservices.Discount\CasgemMicroservices.Discount.csproj", "{8E700DA9-69D2-4ED4-9864-430A43EEB65F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CasgemMicroservices.Discount", "Services\Discount\CasgemMicroservices.Discount\CasgemMicroservices.Discount.csproj", "{8E700DA9-69D2-4ED4-9864-430A43EEB65F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasgemMicroservices.Order", "Services\Order\CasgemMicroservices.Order\CasgemMicroservices.Order.csproj", "{6A266DF2-77B6-4244-A4F9-91BA9C72840B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CasgemMicroservices.Order", "Services\Order\CasgemMicroservices.Order\CasgemMicroservices.Order.csproj", "{6A266DF2-77B6-4244-A4F9-91BA9C72840B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasgemMicroservices.Cargo", "Services\Cargo\CasgemMicroservices.Cargo\CasgemMicroservices.Cargo.csproj", "{ABF55731-ADAD-4536-9EDD-62B8B82D98F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CasgemMicroservices.Cargo", "Services\Cargo\CasgemMicroservices.Cargo\CasgemMicroservices.Cargo.csproj", "{ABF55731-ADAD-4536-9EDD-62B8B82D98F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasgemMicroservices.Payment", "Services\Payment\CasgemMicroservices.Payment\CasgemMicroservices.Payment.csproj", "{A87242A1-1D02-491B-91BB-1F3EA8457695}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CasgemMicroservices.Payment", "Services\Payment\CasgemMicroservices.Payment\CasgemMicroservices.Payment.csproj", "{A87242A1-1D02-491B-91BB-1F3EA8457695}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{57343CA6-7DB0-499A-85FD-C5118872FF89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasgemMicroservices.Shared", "Shared\CasgemMicroservices.Shared\CasgemMicroservices.Shared.csproj", "{AB284E15-CCFB-4C71-96FC-9FA3F8E63377}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,6 +69,10 @@ Global
 		{A87242A1-1D02-491B-91BB-1F3EA8457695}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A87242A1-1D02-491B-91BB-1F3EA8457695}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A87242A1-1D02-491B-91BB-1F3EA8457695}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB284E15-CCFB-4C71-96FC-9FA3F8E63377}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB284E15-CCFB-4C71-96FC-9FA3F8E63377}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB284E15-CCFB-4C71-96FC-9FA3F8E63377}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB284E15-CCFB-4C71-96FC-9FA3F8E63377}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -82,6 +90,7 @@ Global
 		{6A266DF2-77B6-4244-A4F9-91BA9C72840B} = {05D38F90-721E-42FB-B56A-5A54E2B6199E}
 		{ABF55731-ADAD-4536-9EDD-62B8B82D98F2} = {6396406B-F7B5-4E3B-B43E-DBCE20CBEF9F}
 		{A87242A1-1D02-491B-91BB-1F3EA8457695} = {35574CEC-0B3B-4EC4-9C97-2013D1C19ECC}
+		{AB284E15-CCFB-4C71-96FC-9FA3F8E63377} = {57343CA6-7DB0-499A-85FD-C5118872FF89}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {79D7DC9C-A94B-444E-8AE4-6F9274DA41CD}

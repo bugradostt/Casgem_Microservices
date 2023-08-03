@@ -1,0 +1,12 @@
+C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_Microservices\Shared\CasgemMicroservices.Shared\bin\Debug\net6.0\CasgemMicroservices.Shared.deps.json
+C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_Microservices\Shared\CasgemMicroservices.Shared\bin\Debug\net6.0\CasgemMicroservices.Shared.dll
+C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_Microservices\Shared\CasgemMicroservices.Shared\bin\Debug\net6.0\CasgemMicroservices.Shared.pdb
+C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_Microservices\Shared\CasgemMicroservices.Shared\obj\Debug\net6.0\CasgemMicroservices.Shared.csproj.AssemblyReference.cache
+C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_Microservices\Shared\CasgemMicroservices.Shared\obj\Debug\net6.0\CasgemMicroservices.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_Microservices\Shared\CasgemMicroservices.Shared\obj\Debug\net6.0\CasgemMicroservices.Shared.AssemblyInfoInputs.cache
+C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_Microservices\Shared\CasgemMicroservices.Shared\obj\Debug\net6.0\CasgemMicroservices.Shared.AssemblyInfo.cs
+C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_Microservices\Shared\CasgemMicroservices.Shared\obj\Debug\net6.0\CasgemMicroservices.Shared.csproj.CoreCompileInputs.cache
+C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_Microservices\Shared\CasgemMicroservices.Shared\obj\Debug\net6.0\CasgemMicroservices.Shared.dll
+C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_Microservices\Shared\CasgemMicroservices.Shared\obj\Debug\net6.0\refint\CasgemMicroservices.Shared.dll
+C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_Microservices\Shared\CasgemMicroservices.Shared\obj\Debug\net6.0\CasgemMicroservices.Shared.pdb
+C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_Microservices\Shared\CasgemMicroservices.Shared\obj\Debug\net6.0\ref\CasgemMicroservices.Shared.dll
