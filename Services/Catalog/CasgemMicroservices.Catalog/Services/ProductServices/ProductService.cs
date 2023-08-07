@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using CasgemMicroservices.Catalog.Dtos.CategoryDtos;
 using CasgemMicroservices.Catalog.Dtos.ProductDtos;
 using CasgemMicroservices.Catalog.Models;
 using CasgemMicroservices.Catalog.Settings.Abstract;
@@ -23,29 +24,79 @@ namespace CasgemMicroservices.Catalog.Services.ProductServices
             _categoryCollection = database.GetCollection<Category>(_databaseSettings.CategoryCollectionName);
         }
 
-        public Task<Response<CreateProductDto>> CreateProductAsync(CreateProductDto createProductDto)
+        public async Task<Response<CreateProductDto>> CreateProductAsync(CreateProductDto createProductDto)
         {
-            throw new NotImplementedException();
+            var value = _mapper.Map<Product>(createProductDto);
+            await _productCollection.InsertOneAsync(value);
+            return Response<CreateProductDto>.Success(_mapper.Map<CreateProductDto>(value), 200);
+
         }
 
-        public Task<Response<NoContent>> DeleteProductAsync(string id)
+        public async Task<Response<NoContent>> DeleteProductAsync(string id)
         {
-            throw new NotImplementedException();
+            var value = await _productCollection.DeleteOneAsync(x=>x.ProductId==id);
+            if (value.DeletedCount > 0)
+            {
+                return Response<NoContent>.Success(204);
+            }
+            else
+            {
+                return Response<NoContent>.Fail("Silinecek ürün bulunamadı", 404);
+            }
+        }
+       
+        public async Task<Response<ResultProductDto>> GetProductByIdAsync(string id)
+        {
+            var value = await _productCollection.Find<Product>(x => x.ProductId == id).FirstOrDefaultAsync();
+            if (value == null)
+            {
+                return Response<ResultProductDto>.Fail("Böyle bir id bulunamadı", 404);
+
+            }
+            else
+            {
+                return Response<ResultProductDto>.Success(_mapper.Map<ResultProductDto>(value), 200);
+            }
         }
 
-        public Task<Response<ResultProductDto>> GetProductByIdAsync(string id)
+        public async Task<Response<List<ResultProductDto>>> GetProductListAsync()
         {
-            throw new NotImplementedException();
+            var values = await _productCollection.Find(x => true).ToListAsync();
+            return Response<List<ResultProductDto>>.Success(_mapper.Map<List<ResultProductDto>>(values), 200);
+
         }
 
-        public Task<Response<List<ResultProductDto>>> GetProductListAsync()
+        public async Task<Response<List<ResultProductDto>>> GetProductListWithCategoryAsync()
         {
-            throw new NotImplementedException();
+            var values = await _productCollection.Find(x => true).ToListAsync();
+            if (values.Any())
+            {
+                foreach (var i in values)
+                {
+                    i.Category = await _categoryCollection.Find(x => x.CategoryId == i.CategoryId).FirstOrDefaultAsync();
+                }
+
+            }
+            else
+            {
+                values = new List<Product>();
+            }
+            return Response<List<ResultProductDto>>.Success(_mapper.Map<List<ResultProductDto>>(values), 200);
+
         }
 
-        public Task<Response<UpdateProductDto>> UpdateProductAsync(UpdateProductDto updateProductDto)
+        public async  Task<Response<UpdateProductDto>> UpdateProductAsync(UpdateProductDto updateProductDto)
         {
-            throw new NotImplementedException();
+            var value = _mapper.Map<Product>(updateProductDto);
+            var result = await _productCollection.FindOneAndReplaceAsync(x => x.ProductId == updateProductDto.ProductId, value);
+            if (result == null)
+            {
+                return Response<UpdateProductDto>.Fail("Güncellenecek veri bulunamadı", 404);
+            }
+            else
+            {
+                return Response<UpdateProductDto>.Success(204);
+            }
         }
     }
 }

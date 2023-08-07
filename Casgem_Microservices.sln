@@ -37,7 +37,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CasgemMicroservices.Payment
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{57343CA6-7DB0-499A-85FD-C5118872FF89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasgemMicroservices.Shared", "Shared\CasgemMicroservices.Shared\CasgemMicroservices.Shared.csproj", "{AB284E15-CCFB-4C71-96FC-9FA3F8E63377}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CasgemMicroservices.Shared", "Shared\CasgemMicroservices.Shared\CasgemMicroservices.Shared.csproj", "{AB284E15-CCFB-4C71-96FC-9FA3F8E63377}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityServer", "IdentityServer", "{15B2F707-30E5-4566-8992-D9E50AF7F2DD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Casgem_Microservis.IdentityServer", "IdentityServer\Casgem_Microservis.IdentityServer\Casgem_Microservis.IdentityServer.csproj", "{17C27367-89F5-4861-986D-C9A57307DDD8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,6 +77,10 @@ Global
 		{AB284E15-CCFB-4C71-96FC-9FA3F8E63377}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB284E15-CCFB-4C71-96FC-9FA3F8E63377}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB284E15-CCFB-4C71-96FC-9FA3F8E63377}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17C27367-89F5-4861-986D-C9A57307DDD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17C27367-89F5-4861-986D-C9A57307DDD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17C27367-89F5-4861-986D-C9A57307DDD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17C27367-89F5-4861-986D-C9A57307DDD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -91,6 +99,7 @@ Global
 		{ABF55731-ADAD-4536-9EDD-62B8B82D98F2} = {6396406B-F7B5-4E3B-B43E-DBCE20CBEF9F}
 		{A87242A1-1D02-491B-91BB-1F3EA8457695} = {35574CEC-0B3B-4EC4-9C97-2013D1C19ECC}
 		{AB284E15-CCFB-4C71-96FC-9FA3F8E63377} = {57343CA6-7DB0-499A-85FD-C5118872FF89}
+		{17C27367-89F5-4861-986D-C9A57307DDD8} = {15B2F707-30E5-4566-8992-D9E50AF7F2DD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {79D7DC9C-A94B-444E-8AE4-6F9274DA41CD}

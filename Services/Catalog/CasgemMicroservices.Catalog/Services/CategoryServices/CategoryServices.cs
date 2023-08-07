@@ -26,11 +26,12 @@ namespace CasgemMicroservices.Catalog.Services.CategoryServices
             var value = _mapper.Map<Category>(createCategoryDto);
             await _categoryCollection.InsertOneAsync(value);
             return Response<CreateCategoryDto>.Success(_mapper.Map<CreateCategoryDto>(value),200);
+        
         }
 
         public async Task<Response<NoContent>> DeleteCategoryAsync(string id)
         {
-            var value = await _categoryCollection.DeleteOneAsync(id);
+            var value = await _categoryCollection.DeleteOneAsync(x=>x.CategoryId==id);
             if (value.DeletedCount>0)
             {
                 return Response<NoContent>.Success(204);
@@ -60,6 +61,7 @@ namespace CasgemMicroservices.Catalog.Services.CategoryServices
           
             var values = await _categoryCollection.Find(x => true).ToListAsync();
             return Response<List<ResultCategoryDto>>.Success(_mapper.Map<List<ResultCategoryDto>>(values), 200);
+        
         }
 
         public async Task<Response<UpdateCategoryDto>> UpdateCategoryAsync(UpdateCategoryDto updateCategoryDto)

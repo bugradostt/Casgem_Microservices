@@ -47,3 +47,10 @@ C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_Microservices\Services\
 C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_Microservices\Services\Catalog\CasgemMicroservices.Catalog\obj\Debug\net6.0\CasgemMicroservices.Catalog.pdb
 C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_Microservices\Services\Catalog\CasgemMicroservices.Catalog\obj\Debug\net6.0\CasgemMicroservices.Catalog.genruntimeconfig.cache
 C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_Microservices\Services\Catalog\CasgemMicroservices.Catalog\obj\Debug\net6.0\ref\CasgemMicroservices.Catalog.dll
+C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_Microservices\Services\Catalog\CasgemMicroservices.Catalog\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_Microservices\Services\Catalog\CasgemMicroservices.Catalog\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_Microservices\Services\Catalog\CasgemMicroservices.Catalog\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_Microservices\Services\Catalog\CasgemMicroservices.Catalog\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_Microservices\Services\Catalog\CasgemMicroservices.Catalog\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_Microservices\Services\Catalog\CasgemMicroservices.Catalog\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_Microservices\Services\Catalog\CasgemMicroservices.Catalog\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
